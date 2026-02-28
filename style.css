@@ -1,12 +1,30 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'header header'
+    'capa-conteudo capa-imagem'
+    'org-imagem org-conteudo'
 }
 header {
+    grid-area: header;
     display: flex;
     align-items: center;
     padding: 0 10px;
+}
+section#capa-conteudos {
+    grid-area: capa-conteudo;
+}
+section#capa-imagem {
+    grid-area: capa-imagem;
+}
+section#org-imagem {
+    grid-area: org-imagem;
+}
+section#org-conteudo {
+    grid-area: org-conteudo;
 }
 nav {
     flex-grow: 1;
