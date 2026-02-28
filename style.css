@@ -31,6 +31,13 @@ section#capa-imagem > img, section#org-imagem > img {
 section#org-conteudo {
     grid-area: org-conteudo;
 }
+footer {
+    background: #f2f2f2;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
 nav {
     flex-grow: 1;
 }
@@ -64,4 +71,21 @@ ul a:hover {
 }
 .botao.destaque:hover {
     background: #2d7eff;
+}
+/* Tipografia */
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 1.8rem;
+}
+h3 {
+    font-size: 1.2rem;
+}
+.texto-destaque {
+    color: #0B5CFF;
 }
