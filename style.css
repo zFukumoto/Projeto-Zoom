@@ -9,6 +9,7 @@
     'org-imagem org-conteudo';
     row-gap: 20px;
     column-gap: 20px;
+    padding: 10px;
 }
 header {
     grid-area: header;
@@ -96,4 +97,23 @@ h3 {
 }
 .texto-destaque {
     color: #0B5CFF;
+}
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'header'
+        'capa-conteudo'
+        'capa-imagem'
+        'org-imagem'
+        'org-conteudo';
+    }
+    header {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
 }
