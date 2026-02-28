@@ -1,3 +1,8 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
 header {
     display: flex;
     align-items: center;
