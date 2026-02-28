@@ -6,7 +6,9 @@
     grid-template-areas: 
     'header header'
     'capa-conteudo capa-imagem'
-    'org-imagem org-conteudo'
+    'org-imagem org-conteudo';
+    row-gap: 20px;
+    column-gap: 20px;
 }
 header {
     grid-area: header;
@@ -22,6 +24,9 @@ section#capa-imagem {
 }
 section#org-imagem {
     grid-area: org-imagem;
+}
+section#capa-imagem > img, section#org-imagem > img {
+    max-width: 100%;
 }
 section#org-conteudo {
     grid-area: org-conteudo;
